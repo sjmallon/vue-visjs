@@ -2,15 +2,28 @@
   "name": "vue-visjs",
   "version": "0.1.0",
   "private": true,
+  "main": "./dist/vue-visjs.ssr.js",
+  "module": "./dist/vue-visjs.esm.js",
+  "unpkg": "./dist/vue-visjs.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "rollup --config build/rollup.config.js --environment BUILD:production",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
+  "files": [
+    "dist/*"
+  ],
   "dependencies": {
+    "canvas": "^2.6.0",
     "core-js": "^3.3.2",
-    "vue": "^2.6.10"
+    "keycharm": "^0.2.0",
+    "vis-data": "^6.2.3",
+    "vis-network": "^6.4.4",
+    "vis-timeline": "^6.2.7",
+    "vis-util": "^1.1.10",
+    "vue": "^2.6.10",
+    "vue-runtime-helpers": "^1.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
@@ -23,7 +36,16 @@
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
+    "fibers": "^4.0.2",
+    "node-sass": "^4.13.0",
     "prettier": "^1.18.2",
+    "rollup": "^1.27.5",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-vue": "^5.1.4",
     "sass": "^1.19.0",
     "sass-loader": "^8.0.0",
     "vue-template-compiler": "^2.6.10"
