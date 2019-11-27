@@ -20,7 +20,6 @@ const mountVisData = (vm, propName, DataSet, DataView) => {
         vm.visData[propName].remove(diff)
       }
     }
-
     vm.$watch(propName, callback, {
       deep: true
     })

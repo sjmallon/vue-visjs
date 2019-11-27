@@ -64,6 +64,11 @@ export default {
       edges: null
     }
   }),
+  computed: {
+    dsNodes() {
+      return new DataSet(this.nodes)
+    }
+  },
   watch: {
     options: {
       deep: true,
@@ -259,7 +264,7 @@ export default {
     const container = this.$refs.visualization
     this.visData.nodes = mountVisData(this, 'nodes', DataSet, DataView)
     this.visData.edges = mountVisData(this, 'edges', DataSet, DataView)
-    this.network = new Network(container, { nodes: this.nodes, edges: this.edges }, this.options)
+    this.network = new Network(container, this.visData, this.options)
 
     this.events.forEach(eventName =>
       this.network.on(eventName, props => this.$emit(translateEvent(eventName), props))
