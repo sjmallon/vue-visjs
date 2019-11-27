@@ -1,7 +1,7 @@
 {
   "name": "vue-visjs",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "./dist/vue-visjs.ssr.js",
   "module": "./dist/vue-visjs.esm.js",
   "unpkg": "./dist/vue-visjs.min.js",
