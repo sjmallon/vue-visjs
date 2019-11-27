@@ -9,10 +9,24 @@
     "serve": "vue-cli-service serve",
     "build": "rollup --config build/rollup.config.js --environment BUILD:production",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "beforePublish": "npm run lint && npm run build",
+    "prepare": "npm run build"
   },
   "files": [
-    "dist/*"
+    "dist/",
+    "src/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sjmallon/vue-visjs.git"
+  },
+  "author": "Steve Mallon <public.sjmallon@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vis",
+    "visjs"
   ],
   "dependencies": {
     "canvas": "^2.6.0",
@@ -24,6 +38,9 @@
     "vis-util": "^1.1.10",
     "vue": "^2.6.10",
     "vue-runtime-helpers": "^1.1.2"
+  },
+  "peerDependencies": {
+    "vue": "~2.x"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
