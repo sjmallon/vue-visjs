@@ -1,5 +1,10 @@
 # vue-visjs
 
+## 2019-11-29, version 0.2.0
+
+- Added: basic unit tests
+- Fixed: unneccesary processing of some props
+
 ## 2019-11-26, version 0.1.0
 
 Initial release. Built on base of [vue2vis](https://github.com/alexcode/vue2vis).
