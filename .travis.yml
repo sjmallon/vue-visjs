@@ -4,6 +4,7 @@ node_js:
   - 10
 script:
   - npm run build
+  - npm run test
 deploy:
   provider: npm
   edge: true

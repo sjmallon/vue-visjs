@@ -29,6 +29,7 @@ export default [
     external: ['vis-data', 'vis-util', 'vis-timeline', 'vis-network'],
     input: 'src/main.js',
     output: {
+      name: 'vueVisjs',
       format: 'iife',
       file: 'dist/vue-visjs.min.js',
       globals: {

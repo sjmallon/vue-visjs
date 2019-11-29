@@ -11,7 +11,7 @@ This is a fork of the [vis2vue](https://github.com/alexcode/vue2vis) project to 
     <img src="https://img.shields.io/github/license/sjmallon/vue-visjs" alt="Software License" />
   </a>
   <a href="https://github.com/sjmallon/vue-visjs/releases">
-    <img src="https://img.shields.io/github/release/sjmallon/vue-visjs" alt="Latest Version" />
+    <img src="https://img.shields.io/github/v/release/sjmallon/vue-visjs?sort=semver" alt="Latest Version" />
   </a>
 
   <a href="https://github.com/alexcode/vue2vis/issues">

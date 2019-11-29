@@ -44,8 +44,7 @@
       @edges-mounted="networkEvent('edges-mounted')"
       @edges-add="networkEvent('edges-add')"
       @edges-update="networkEvent('edges-update')"
-      @edges-remove="networkEvent('edges-remove')"
-    >
+      @edges-remove="networkEvent('edges-remove')">
     </network>
     <button @click="addNode">Add node</button>
     <button @click="addEdge">Add edge</button>
@@ -87,8 +86,7 @@
       @items-mounted="timelineWithoutGroupsEvent('items-mounted')"
       @items-add="timelineWithoutGroupsEvent('items-add')"
       @items-update="timelineWithoutGroupsEvent('items-update')"
-      @items-remove="timelineWithoutGroupsEvent('items-remove')"
-    >
+      @items-remove="timelineWithoutGroupsEvent('items-remove')">
     </timeline>
     <div class="events">
       <p>
@@ -130,8 +128,7 @@
       @groups-mounted="timelineEvent('groups-mounted')"
       @groups-add="timelineEvent('groups-add')"
       @groups-update="timelineEvent('groups-update')"
-      @groups-remove="timelineEvent('groups-remove')"
-    >
+      @groups-remove="timelineEvent('groups-remove')">
     </timeline>
     <div class="events">
       <p>
@@ -162,8 +159,7 @@
       @groups-mounted="graph2dEvent('groups-mounted')"
       @groups-add="graph2dEvent('groups-add')"
       @groups-update="graph2dEvent('groups-update')"
-      @groups-remove="graph2dEvent('groups-remove')"
-    >
+      @groups-remove="graph2dEvent('groups-remove')">
     </graph-2d>
     <div class="events">
       <p>
