@@ -35,19 +35,4 @@ const translateEvent = event => {
   return event.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase()
 }
 
-const observerClean = obj => {
-  if (Array.isArray(obj)) {
-    return obj.map(item => observerClean(item))
-  } else if (Object.prototype.toString.call(obj) === '[object Date]') {
-    return new Date(obj.valueOf())
-  } else if (typeof obj === 'object' && obj !== null) {
-    return Object.keys(obj).reduce(
-      (res, e) => Object.assign(res, { [e]: observerClean(obj[e]) }),
-      {}
-    )
-  } else {
-    return obj
-  }
-}
-
-export { arrayDiff, mountVisData, translateEvent, observerClean }
+export { arrayDiff, mountVisData, translateEvent }

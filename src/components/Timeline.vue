@@ -5,7 +5,7 @@
 <script>
 import { Timeline } from 'vis-timeline'
 import { DataSet, DataView } from 'vis-timeline'
-import { mountVisData, translateEvent, observerClean } from '../utils'
+import { mountVisData, translateEvent } from '../utils'
 
 export default {
   name: 'timeline',
@@ -57,31 +57,11 @@ export default {
       groups: null
     }
   }),
-  computed: {
-    cleanEvents() {
-      return observerClean(this.events)
-    },
-    cleanGroups() {
-      return observerClean(this.groups)
-    },
-    cleanItems() {
-      return observerClean(this.items)
-    },
-    cleanOptions() {
-      return observerClean(this.options)
-    }
-  },
   watch: {
-    events: {
-      deep: false,
-      handler() {
-        this.timeline.setEvents(this.cleanEvents)
-      }
-    },
     options: {
       deep: true,
       handler() {
-        this.timeline.setOptions(this.cleanOptions)
+        this.timeline.setOptions(this.options)
       }
     },
     selection: {
@@ -180,10 +160,10 @@ export default {
   mounted() {
     const container = this.$refs.visualization
 
-    this.visData.items = mountVisData(this, 'cleanItems', DataSet, DataView)
+    this.visData.items = mountVisData(this, 'items', DataSet, DataView)
 
     if (this.groups && this.groups.length > 0) {
-      this.visData.groups = mountVisData(this, 'cleanGroups', DataSet, DataView)
+      this.visData.groups = mountVisData(this, 'groups', DataSet, DataView)
       this.timeline = new Timeline(container, this.visData.items, this.visData.groups, this.options)
     } else {
       this.timeline = new Timeline(container, this.visData.items, this.options)
