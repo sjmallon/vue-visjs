@@ -1,5 +1,9 @@
 # vue-visjs
 
+## 2020-01-29, version 0.3.0
+
+- Package updates
+
 ## 2019-11-29, version 0.2.0
 
 - Added: basic unit tests
