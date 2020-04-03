@@ -1,8 +1,8 @@
-//import { DataSet, DataView } from 'vis-data'
+import { DataSet, DataView } from 'vis-data/peer'
 
 const arrayDiff = (arr1, arr2) => arr1.filter(x => arr2.indexOf(x) === -1)
 
-const mountVisData = (vm, propName, DataSet, DataView) => {
+const mountVisData = (vm, propName /*, DataSet, DataView*/) => {
   let data = vm[propName]
   // If data is DataSet or DataView we return early without attaching our own events
   if (!(vm[propName] instanceof DataSet || vm[propName] instanceof DataView)) {

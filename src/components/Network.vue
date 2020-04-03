@@ -3,8 +3,9 @@
 </template>
 
 <script>
-import { Network } from 'vis-network'
-import { DataSet, DataView } from 'vis-network'
+import { Network } from 'vis-network/peer'
+import { DataSet, DataView } from 'vis-data/peer'
+
 import { mountVisData, translateEvent } from '../utils'
 
 export default {
@@ -262,8 +263,9 @@ export default {
   },
   mounted() {
     const container = this.$refs.visualization
-    this.visData.nodes = mountVisData(this, 'nodes', DataSet, DataView)
-    this.visData.edges = mountVisData(this, 'edges', DataSet, DataView)
+    this.visData.nodes = mountVisData(this, 'nodes' /* DataSet, DataView */)
+    this.visData.edges = mountVisData(this, 'edges' /* , DataSet, DataView */)
+
     this.network = new Network(container, this.visData, this.options)
 
     this.events.forEach(eventName =>

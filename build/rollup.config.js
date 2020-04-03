@@ -6,7 +6,13 @@ import { terser } from 'rollup-plugin-terser'
 export default [
   // ESM build to be used with webpack/rollup.
   {
-    external: ['vis-data', 'vis-util', 'vis-timeline', 'vis-network'],
+    external: [
+      'vis-data/peer',
+      'vis-util/peer',
+      'vis-timeline/peer',
+      'vis-network/peer',
+      'vis-data/peer'
+    ],
     input: 'src/main.js',
     output: {
       format: 'esm',
@@ -16,7 +22,13 @@ export default [
   },
   // SSR build.
   {
-    external: ['vis-data', 'vis-util', 'vis-timeline', 'vis-network'],
+    external: [
+      'vis-data/peer',
+      'vis-util/peer',
+      'vis-timeline/peer',
+      'vis-network/peer',
+      'vis-data/peer'
+    ],
     input: 'src/main.js',
     output: {
       format: 'cjs',
@@ -26,17 +38,23 @@ export default [
   },
   // Browser build.
   {
-    external: ['vis-data', 'vis-util', 'vis-timeline', 'vis-network'],
+    external: [
+      'vis-data/peer',
+      'vis-util/peer',
+      'vis-timeline/peer',
+      'vis-network/peer',
+      'vis-data/peer'
+    ],
     input: 'src/main.js',
     output: {
       name: 'vueVisjs',
       format: 'iife',
       file: 'dist/vue-visjs.min.js',
       globals: {
-        'vis-data': 'visData',
-        'vis-util': 'visUtil',
-        'vis-timeline': 'visTimeline',
-        'vis-network': 'visNetwork'
+        'vis-data/peer': 'visData',
+        'vis-util/peer': 'visUtil',
+        'vis-timeline/peer': 'visTimeline',
+        'vis-network/peer': 'visNetwork'
       }
     },
     plugins: [commonjs(), vue(), postcss(), buble(), terser()]

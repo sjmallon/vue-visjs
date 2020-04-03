@@ -29,5 +29,5 @@ if (typeof window !== 'undefined') {
 if (GlobalVue) {
   GlobalVue.use(plugin)
 }
-export { DataSet, DataView } from 'vis-data'
+export { DataSet, DataView } from 'vis-data/peer'
 export { Timeline, Graph2d, Network }

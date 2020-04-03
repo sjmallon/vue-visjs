@@ -3,8 +3,8 @@
 </template>
 
 <script>
-import { Timeline } from 'vis-timeline'
-import { DataSet, DataView } from 'vis-timeline'
+import { Timeline } from 'vis-timeline/peer'
+import { DataSet, DataView } from 'vis-data/peer'
 import { mountVisData, translateEvent } from '../utils'
 
 export default {
