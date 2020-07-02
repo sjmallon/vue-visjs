@@ -3,8 +3,8 @@
 </template>
 
 <script>
-import { Graph2d } from 'vis-timeline/peer'
-import { DataSet, DataView } from 'vis-data/peer'
+import { Graph2d } from 'vis-timeline/esnext'
+import { DataSet, DataView } from 'vis-data/esnext'
 import { mountVisData, translateEvent } from '../utils'
 
 export default {

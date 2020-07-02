@@ -86,7 +86,8 @@ describe('Graph2d.vue', () => {
     expect(wrapper.vm.graph2d).not.toBeNull()
   })
 
-  it('renders elements within graph', () => {
+  // temporarily skipping pending fix to https://github.com/visjs/vis-timeline/issues/463
+  it.skip('renders elements within graph', () => {
     const wrapper = mount(Graph2d, {
       propsData: {
         groups: graph2d.groups,

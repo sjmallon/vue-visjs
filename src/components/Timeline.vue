@@ -3,8 +3,8 @@
 </template>
 
 <script>
-import { Timeline } from 'vis-timeline/peer'
-import { DataSet, DataView } from 'vis-data/peer'
+import { Timeline } from 'vis-timeline/esnext'
+import { DataSet, DataView } from 'vis-data/esnext'
 import { mountVisData, translateEvent } from '../utils'
 
 export default {
@@ -128,6 +128,9 @@ export default {
     },
     setCustomTimeTitle(title, id) {
       this.timeline.setCustomTimeTitle(title, id)
+    },
+    setCustomTimeMarker(title, id, editable) {
+      this.timeline.setCustomTimeMarker(title, id, editable)
     },
     setData(object) {
       this.timeline.setData(object)
