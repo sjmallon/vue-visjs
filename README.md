@@ -207,7 +207,7 @@ The dev server should detect modification and reload the demo
 
 ## Security
 
-If you discover any security related issues, please email infocontact.alex@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email public.sjmallon@gmail.com instead of using the issue tracker.
 
 ## Credits
 
