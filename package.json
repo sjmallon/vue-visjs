@@ -40,7 +40,8 @@
     "vis-timeline": "^7.4.8",
     "vis-util": "^5.0.1",
     "vue": "~2.x",
-    "vue-runtime-helpers": "^1.1.2"
+    "vue-runtime-helpers": "^1.1.2",
+    "xss": "^1.0.8"
   },
   "peerDependencies": {
     "vue": "~2.x"
