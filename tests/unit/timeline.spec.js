@@ -49,6 +49,6 @@ describe('Timeline.vue', () => {
         options: { start: '2014-01-01', end: '2014-12-31', width: 1000 }
       }
     })
-    expect(wrapper.contains('.vis-item-content')).toBe(true)
+    expect(wrapper.find('.vis-item-content').exists()).toBe(true)
   })
 })

@@ -95,6 +95,6 @@ describe('Graph2d.vue', () => {
         options: graph2d.options
       }
     })
-    expect(wrapper.contains('.vis-bar')).toBe(true)
+    expect(wrapper.find('.vis-bar').exists()).toBe(true)
   })
 })

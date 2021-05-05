@@ -45,6 +45,6 @@ describe('Network.vue', () => {
       }
     })
     // console.log(wrapper.html().split('</div>'))
-    expect(wrapper.contains('.vis-network')).toBe(true)
+    expect(wrapper.find('.vis-network').exists()).toBe(true)
   })
 })
