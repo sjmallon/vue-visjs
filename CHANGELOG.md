@@ -1,4 +1,17 @@
-# vue-visjs
+# vue-visjs changelog
+
+## 2021-05-07, version 0.6.0
+
+- Base rollup config on vue-sfc-rollup template
+
+## 2021-5-05, version 0.5.0
+
+- Move from buble to babel for transpilation to handle null-related operators in visjs code
+- Rework rollup configuration
+
+## 2020-05-04, version 0.4.0
+
+- Package updates
 
 ## 2020-01-29, version 0.3.0
 
