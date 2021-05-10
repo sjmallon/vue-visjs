@@ -1,9 +1,4 @@
-const devPresets = [
-  '@vue/babel-preset-app',
-  {
-    include: [/(optional-chaining|nullish-coalescing)/]
-  }
-] //includes babel-preset-env
+const devPresets = ['@vue/babel-preset-app'] //includes babel-preset-env
 const buildPresets = [
   [
     '@babel/preset-env',
