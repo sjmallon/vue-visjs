@@ -100,6 +100,7 @@ if (!argv.format || argv.format === 'es') {
       ...baseConfig.plugins.postVue,
       babel({
         ...baseConfig.plugins.babel,
+        exclude: 'node_modules/(?!(vis-(data|network|timeline|util))/).*',
         presets: [
           [
             '@babel/preset-env',

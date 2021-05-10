@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Timeline from '@/components/Network'
+import Network from '@/components/Network'
 
 // simple test data
 const network = {
@@ -26,7 +26,7 @@ const network = {
 
 describe('Network.vue', () => {
   it('the network exists', () => {
-    const wrapper = mount(Timeline, {
+    const wrapper = mount(Network, {
       propsData: {
         nodes: network.nodes,
         edges: network.edges,
@@ -37,7 +37,7 @@ describe('Network.vue', () => {
   })
 
   it('renders elements within network', () => {
-    const wrapper = mount(Timeline, {
+    const wrapper = mount(Network, {
       propsData: {
         nodes: network.nodes,
         edges: network.edges,
