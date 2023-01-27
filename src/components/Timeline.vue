@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { Timeline } from 'vis-timeline/esnext'
+import { Timeline } from '@deia/vis-timeline/esnext'
 import { DataSet, DataView } from 'vis-data/esnext'
 import { mountVisData, translateEvent } from '../utils'
 
