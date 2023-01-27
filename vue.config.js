@@ -1,3 +1,3 @@
 module.exports = {
-  transpileDependencies: [/vis-/]
+  transpileDependencies: [/vis-/, /@deia\/vis-/]
 }

@@ -1,6 +1,6 @@
 {
   "name": "@deia/vue-visjs",
-  "version": "0.6.2",
+  "version": "0.6.4",
   "private": false,
   "main": "./dist/vue-visjs.ssr.js",
   "module": "./dist/vue-visjs.esm.js",
