@@ -42,7 +42,7 @@ export default {
       groups: null
     }
   }),
-  watch: {
+  watchEffect: {
     options: {
       deep: true,
       handler(v) {
@@ -124,7 +124,7 @@ export default {
     // See here for more: https://github.com/almende/vis/issues/2524
     this.graph2d = null
   },
-  beforeDestroy() {
+  beforeUnmount() {
     this.graph2d.destroy()
   }
 }

@@ -1,5 +1,7 @@
 <template>
-  <div ref="visualization"></div>
+  <div>
+    <div ref="visualization"></div>
+  </div>
 </template>
 
 <script>
@@ -12,11 +14,11 @@ export default {
   props: {
     groups: {
       type: [Array, DataSet, DataView],
-      default: () => []
+      default: () => [],
     },
     items: {
       type: [Array, DataSet, DataView],
-      default: () => []
+      default: () => [],
     },
     events: {
       type: Array,
@@ -40,36 +42,36 @@ export default {
         'timechange',
         'timechanged',
         'markerchange',
-        'markerchanged'
-      ]
+        'markerchanged',
+      ],
     },
     selection: {
       type: [Array, String],
-      default: () => []
+      default: () => [],
     },
     options: {
-      type: Object
-    }
+      type: Object,
+    },
   },
   data: () => ({
     visData: {
       items: null,
-      groups: null
-    }
+      groups: null,
+    },
   }),
-  watch: {
+  watchEffect: {
     options: {
       deep: true,
       handler() {
         this.timeline.setOptions(this.options)
-      }
+      },
     },
     selection: {
       deep: false,
       handler(v) {
         this.timeline.setSelection(v)
-      }
-    }
+      },
+    },
   },
   methods: {
     addCustomTime(time, id) {
@@ -158,7 +160,7 @@ export default {
     },
     zoomOut(percentage, options, callback) {
       this.timeline.zoomOut(percentage, options, callback)
-    }
+    },
   },
   mounted() {
     const container = this.$refs.visualization
@@ -172,8 +174,8 @@ export default {
       this.timeline = new Timeline(container, this.visData.items, this.options)
     }
 
-    this.events.forEach(eventName =>
-      this.timeline.on(eventName, props => this.$emit(translateEvent(eventName), props))
+    this.events.forEach((eventName) =>
+      this.timeline.on(eventName, (props) => this.$emit(translateEvent(eventName), props))
     )
   },
   created() {
@@ -181,8 +183,8 @@ export default {
     // See here for more: https://github.com/almende/vis/issues/2524
     this.timeline = null
   },
-  beforeDestroy() {
+  beforeUnmount() {
     this.timeline.destroy()
-  }
+  },
 }
 </script>
