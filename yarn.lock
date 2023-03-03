@@ -916,10 +916,10 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@deia/vis-timeline@^7.7.1":
-  version "7.7.1"
-  resolved "https://registry.yarnpkg.com/@deia/vis-timeline/-/vis-timeline-7.7.1.tgz#86fbf717a28144a6b0c4b48e1715c161f4e0e0e9"
-  integrity sha512-MK0SuIlbjVL+xST2+h//f1JUl1LX/FuE4LFnk5AmaTF8jLvDeDSjE3BWSYwPYTHfhHokH1ezxWzTnqaTYqfWGg==
+"@deia/vis-timeline@^7.7.2":
+  version "7.7.2"
+  resolved "https://registry.yarnpkg.com/@deia/vis-timeline/-/vis-timeline-7.7.2.tgz#12a34891190b6384b9215f7f203c5a4d7aad1f72"
+  integrity sha512-P7UhGF/rrC7Gns3NO4P5rjfnECGh7ljqbKHHrMIeR7GUbAwtWSEbN3cL4veOq/MAKVLd7nEtJXCoXeqCmrbLBA==
 
 "@egjs/hammerjs@^2.0.17":
   version "2.0.17"

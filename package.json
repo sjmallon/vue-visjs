@@ -1,6 +1,6 @@
 {
   "name": "vue3-visjs",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "private": false,
   "main": "./dist/vue-visjs.ssr.js",
   "module": "./dist/vue-visjs.esm.js",
@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.14.0",
-    "@deia/vis-timeline": "^7.7.1",
+    "@deia/vis-timeline": "^7.7.2",
     "@egjs/hammerjs": "^2.0.17",
     "core-js": "^3.6.5",
     "keycharm": "^0.3.1",
