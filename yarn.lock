@@ -916,11 +916,6 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@deia/vis-timeline@^7.7.3":
-  version "7.7.3"
-  resolved "https://registry.yarnpkg.com/@deia/vis-timeline/-/vis-timeline-7.7.3.tgz#53115349c033f7b4c2b15fa04d066d3078704275"
-  integrity sha512-NOzFqyxnILKF0xCW7tr1Rdot/RGzxfEPU39KgedLinvkl2bEg8//0Y2Uo/mE7Occ21l85xV+FEB4WykPf4TH/A==
-
 "@egjs/hammerjs@^2.0.17":
   version "2.0.17"
   resolved "https://registry.yarnpkg.com/@egjs/hammerjs/-/hammerjs-2.0.17.tgz#5dc02af75a6a06e4c2db0202cae38c9263895124"
@@ -3710,20 +3705,25 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
 
-vis-data@7.1.3:
-  version "7.1.3"
-  resolved "https://registry.yarnpkg.com/vis-data/-/vis-data-7.1.3.tgz#52f896750c402f660b4dcebcde971b2436e876ad"
-  integrity sha512-tmoqfy5m3Ur2pCvTdhN63W8sOUsgWnevMVZTaWybIqM3wgF8tQ/+4Q5BpUNUtmiUhZBLjkIlFpOWGutwk/cdrA==
+vis-data@7.1.8:
+  version "7.1.8"
+  resolved "https://registry.yarnpkg.com/vis-data/-/vis-data-7.1.8.tgz#879f0b30ca6fb73930a92b80a1340f83478b7ccb"
+  integrity sha512-h/cxRDVqnpqqpTBqwUbbKIpWVovOQ+h5rbFS/kio8TUH1np98Lv9bHdWZxahJlyzBaBR9KGvwGHB00jn3MjLbQ==
 
-vis-network@^9.1.2:
-  version "9.1.2"
-  resolved "https://registry.yarnpkg.com/vis-network/-/vis-network-9.1.2.tgz#ddaca300a9764bbf1646a0aa03eb28fe55823ca8"
-  integrity sha512-BdapguKg7sk3NvdZaDsM7T6rNhOBFz0/F4ZScxctK4klRzQPLQPTEcmbioXaZhMkkgWymzBR3lFCxL1q+eYyAw==
+vis-network@^9.1.9:
+  version "9.1.9"
+  resolved "https://registry.yarnpkg.com/vis-network/-/vis-network-9.1.9.tgz#8159b34e7c1570150fcc9296213d2b88ed169394"
+  integrity sha512-Ft+hLBVyiLstVYSb69Q1OIQeh3FeUxHJn0WdFcq+BFPqs+Vq1ibMi2sb//cxgq1CP7PH4yOXnHxEH/B2VzpZYA==
 
-vis-util@^5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/vis-util/-/vis-util-5.0.3.tgz#6a9d67c6ed92f2bfa67e50c20166bb5f59ac07bf"
-  integrity sha512-Wf9STUcFrDzK4/Zr7B6epW2Kvm3ORNWF+WiwEz2dpf5RdWkLUXFSbLcuB88n1W6tCdFwVN+v3V4/Xmn9PeL39g==
+vis-timeline@^7.7.3:
+  version "7.7.3"
+  resolved "https://registry.yarnpkg.com/vis-timeline/-/vis-timeline-7.7.3.tgz#79434eb3029169bff8de1b5012aa5c29786d6594"
+  integrity sha512-hGMzTttdOFWaw1PPlJuCXU2/4UjnsIxT684Thg9fV6YU1JuKZJs3s3BrJgZ4hO3gu5i1hsMe1YIi96o+eNT0jg==
+
+vis-util@^5.0.7:
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/vis-util/-/vis-util-5.0.7.tgz#05fdc1b2ce8f58bfd5635de5de3f152b4b7b0c63"
+  integrity sha512-E3L03G3+trvc/X4LXvBfih3YIHcKS2WrP0XTdZefr6W6Qi/2nNCqZfe4JFfJU6DcQLm6Gxqj2Pfl+02859oL5A==
 
 vue-eslint-parser@^7.10.0:
   version "7.11.0"

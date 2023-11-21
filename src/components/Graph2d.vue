@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { Graph2d } from '@deia/vis-timeline/esnext'
+import { Graph2d } from 'vis-timeline/esnext'
 import { DataSet, DataView } from 'vis-data/esnext'
 import { mountVisData, translateEvent } from '../utils'
 

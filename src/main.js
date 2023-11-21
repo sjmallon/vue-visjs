@@ -1,7 +1,7 @@
 import Timeline from './components/Timeline.vue'
 import Graph2d from './components/Graph2d.vue'
 import Network from './components/Network.vue'
-import '../node_modules/@deia/vis-timeline/styles/vis-timeline-graph2d.min.css'
+import '../node_modules/vis-timeline/styles/vis-timeline-graph2d.min.css'
 import '../node_modules/vis-network/styles/vis-network.min.css'
 
 // Declare install function executed by Vue.use()
