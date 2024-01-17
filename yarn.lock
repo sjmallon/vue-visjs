@@ -3705,10 +3705,10 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
 
-vis-data@7.1.8:
-  version "7.1.8"
-  resolved "https://registry.yarnpkg.com/vis-data/-/vis-data-7.1.8.tgz#879f0b30ca6fb73930a92b80a1340f83478b7ccb"
-  integrity sha512-h/cxRDVqnpqqpTBqwUbbKIpWVovOQ+h5rbFS/kio8TUH1np98Lv9bHdWZxahJlyzBaBR9KGvwGHB00jn3MjLbQ==
+vis-data@7.1.9:
+  version "7.1.9"
+  resolved "https://registry.yarnpkg.com/vis-data/-/vis-data-7.1.9.tgz#ea0504df6fcbaae175173f4bbb05a960ce6c8891"
+  integrity sha512-COQsxlVrmcRIbZMMTYwD+C2bxYCFDNQ2EHESklPiInbD/Pk3JZ6qNL84Bp9wWjYjAzXfSlsNaFtRk+hO9yBPWA==
 
 vis-network@^9.1.9:
   version "9.1.9"
