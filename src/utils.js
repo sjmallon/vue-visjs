@@ -1,6 +1,6 @@
 import { DataSet, DataView } from 'vis-data/esnext'
 
-const arrayDiff = (arr1, arr2) => arr1.filter(x => arr2.indexOf(x) === -1)
+const arrayDiff = (arr1, arr2) => arr1.filter((x) => arr2.indexOf(x) === -1)
 
 const mountVisData = (vm, propName /*, DataSet, DataView*/) => {
   let data = vm[propName]
@@ -12,7 +12,7 @@ const mountVisData = (vm, propName /*, DataSet, DataView*/) => {
       vm.$emit(`${propName}-${event}`, { event, properties, senderId })
     )
     // We attach deep watcher on the prop to propagate changes in the DataSet
-    const callback = value => {
+    const callback = (value) => {
       if (Array.isArray(value)) {
         const newIds = new DataSet(value).getIds()
         const diff = arrayDiff(vm.visData[propName].getIds(), newIds)
@@ -21,7 +21,7 @@ const mountVisData = (vm, propName /*, DataSet, DataView*/) => {
       }
     }
     vm.$watch(propName, callback, {
-      deep: true
+      deep: true,
     })
   }
 
@@ -31,7 +31,7 @@ const mountVisData = (vm, propName /*, DataSet, DataView*/) => {
   return data
 }
 
-const translateEvent = event => {
+const translateEvent = (event) => {
   return event.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase()
 }
 

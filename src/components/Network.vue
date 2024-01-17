@@ -70,7 +70,7 @@ export default {
       return new DataSet(this.nodes)
     }
   },
-  watch: {
+  watchEffect: {
     options: {
       deep: true,
       handler(o) {
@@ -272,7 +272,7 @@ export default {
       this.network.on(eventName, props => this.$emit(translateEvent(eventName), props))
     )
   },
-  beforeDestroy() {
+  beforeUnmount() {
     this.network.destroy()
   }
 }
